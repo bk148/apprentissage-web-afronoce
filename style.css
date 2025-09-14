@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --afro-gold: #F59E0B;
+    --afro-orange: #EA580C;
+    --afro-dark: #0A0A0A;
+    --afro-darker: #050505;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*Avec scroll-behavior: smooth,
+     cliquer sur "Contact" fera glisser la page jusqu’à la section, au lieu de sauter directement.*/
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--afro-dark);
+    color: white;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Définit la largeur de la scrollbar à 10 pixels.*/
+}
+
+::-webkit-scrollbar-track {
+    /* Stylise le rail (la piste sur laquelle glisse le curseur)
+                                     avec la couleur sombre définie dans --afro-dark.*/
+    background: var(--afro-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    /* Stylise le curseur (la partie que l’on déplace) avec la couleur dorée --afro-gold et des bords arrondis.*/
+    background: var(--afro-gold);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /*Change la couleur du curseur en --afro-orange lorsqu’on le survole avec la souris. */
+    background: var(--afro-orange);
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    /* Fixe la barre de navigation en haut de la fenêtre, même lors du scroll */
+    top: 0;
+    /* Positionne le haut de la barre à 0 pixel du haut de la fenêtre */
+    left: 0;
+    /* Aligne la barre à gauche de la fenêtre */
+    right: 0;
+    /* Aligne la barre à droite de la fenêtre (donc elle prend toute la largeur) */
+    z-index: 1000;
+    /* Place la barre au-dessus des autres éléments (priorité d'affichage élevée) */
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
+    /* Applique un dégradé vertical du noir opaque en haut vers transparent en bas, pour un effet de fondu */
+
+    backdrop-filter: blur(10px);
+    /* Floute l’arrière-plan derrière la barre pour un effet "verre dépoli" */
+
+    padding: 1.5rem 2rem;
+    /* Ajoute de l’espace intérieur : 1.5rem en haut/bas, 2rem à gauche/droite */
+
+    transition: all 0.3s ease;
+    /* Rend les changements de style (comme la couleur ou la taille) fluides */
+}
+
+nav.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    /* Fond noir opaque une fois que l'utilisateur a scrollé */
+    padding: 1rem 2rem;
+    /* Réduction du padding pour compacter la barre */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    /* Ombre portée pour détacher visuellement la barre du contenu */
+}
+
+.nav-container {
+    max-width: 1400px;
+    /* Largeur maximale pour limiter l'étalement sur grands écrans */
+    margin: 0 auto;
+    /* Centrage horizontal du conteneur */
+    display: flex;
+    /* Mise en page en flexbox */
+    justify-content: space-between;
+    /* Espacement entre les éléments (logo à gauche, liens à droite) */
+    align-items: center;
+    /* Alignement vertical centré des éléments */
+}
+
+.logo {
+    font-size: 2.5rem;
+    /* Taille du texte du logo */
+    font-weight: bold;
+    /* Texte en gras */
+    background: linear-gradient(135deg, var(--afro-gold), var(--afro-orange));
+    /* Dégradé doré/orangé */
+    -webkit-background-clip: text;
+    /* Clip le fond au texte (Chrome/Safari) */
+    background-clip: text;
+    /* Clip le fond au texte (standard) */
+    -webkit-text-fill-color: transparent;
+    /* Rend le texte transparent pour laisser apparaître le fond */
+    text-decoration: none;
+    /* Supprime le soulignement */
+    transition: transform 0.3s ease;
+    /* Animation fluide lors du hover */
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*.nav-links a — Style de chaque lien*/
+.nav-links a {
+    color: white;
+    /* Couleur du texte en blanc */
+    text-decoration: none;
+    /* Supprime le soulignement */
+    position: relative;
+    /* Nécessaire pour positionner le pseudo-élément ::after */
+    transition: color 0.3s ease;
+    /* Animation fluide de la couleur au survol */
+    font-weight: 500;
+    /* Poids moyen du texte */
+}
+
+/*✨ .nav-links a::after — Barre animée sous le lien*/
+.nav-links a::after {
+    content: '';
+    /* Crée un élément vide */
+    position: absolute;
+    /* Positionné par rapport au lien */
+    bottom: -5px;
+    /* Décalé sous le texte */
+    left: 0;
+    /* Aligné à gauche */
+    width: 0;
+    /* Commence invisible */
+    height: 2px;
+    /* Épaisseur de la barre */
+    background: var(--afro-gold);
+    /* Couleur dorée */
+    transition: width 0.3s ease;
+    /* Animation fluide de la largeur */
+}
+
+/*🟡 .nav-links a:hover — Effet au survol du lien*/
+.nav-links a:hover {
+    color: var(--afro-gold);
+    /* Change la couleur du texte au survol */
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    /* Étend la barre dorée sous le lien au survol */
+}
+
+.nav-buttons {
+    display: flex;
+    /* Affichage en ligne des boutons */
+    gap: 1rem;
+    /* Espacement entre les boutons */
+}
