@@ -12,16 +12,26 @@
     /* Inclut padding et border dans la largeur/hauteur */
 }
 
-/* Variables CSS pour les couleurs du thème Afronoce */
+/* Configuration Nude Chaleureux (Recommandé) */
 :root {
-    --afro-gold: #F59E0B;
-    /* Couleur or principal du thème */
-    --afro-orange: #EA580C;
-    /* Couleur orange pour les accents */
+    --afro-gold: #D4B5A0;
+    /* Nude principal - beige rosé */
+    --afro-orange: #E8CDB0;
+    /* Nude clair pour accents */
     --afro-dark: #0A0A0A;
-    /* Couleur sombre pour les arrière-plans */
+    /* Noir profond inchangé */
     --afro-darker: #050505;
-    /* Couleur encore plus sombre */
+    /* Noir encore plus profond */
+
+    /* Palette nude étendue */
+    --nude-light: #F5F0EB;
+    /* Nude très clair pour arrière-plans */
+    --nude-medium: #C8B8A8;
+    /* Nude moyen pour bordures et détails */
+    --nude-dark: #A0958A;
+    /* Nude foncé pour textes secondaires */
+    --nude-contrast: #8B7355;
+    /* Nude sombre pour contrastes */
 }
 
 /* Défilement fluide pour toute la page */
