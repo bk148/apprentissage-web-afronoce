@@ -1,0 +1,75 @@
+{
+  "categories": [
+    "Tout",
+    "Expositions",
+    "Conférences", 
+    "Défilés",
+    "Musique",
+    "Animation",
+    "Networking"
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "title": "Expositions",
+      "category": "Exposition",
+      "time": "Toute la journée",
+      "description": "Plus de 100 exposants du monde entier présentant les dernières tendances",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400"
+    },
+    {
+      "id": 2,
+      "title": "Talk Show",
+      "category": "Conférence",
+      "time": "14h - 16h",
+      "description": "Conférences avec des experts du mariage et wedding planners",
+      "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400"
+    },
+    {
+      "id": 3,
+      "title": "Défilés de Mode",
+      "category": "Défilé",
+      "time": "11h, 15h, 18h",
+      "description": "Les dernières collections de robes de mariée africaines",
+      "image": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400"
+    },
+    {
+      "id": 4,
+      "title": "Networking",
+      "category": "Networking",
+      "time": "Toute la journée",
+      "description": "Rencontrez des professionnels du secteur",
+      "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400"
+    },
+    {
+      "id": 5,
+      "title": "Live Music",
+      "category": "Musique",
+      "time": "19h - 22h",
+      "description": "Performances musicales avec des artistes africains",
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400"
+    },
+    {
+      "id": 6,
+      "title": "Flashmob",
+      "category": "Animation",
+      "time": "Moments surprises",
+      "description": "Animations surprises tout au long de l'événement",
+      "image": "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Comment obtenir mon billet gratuit ?",
+      "answer": "L'entrée est gratuite sur inscription. Cliquez sur le bouton 'Billet gratuit' et remplissez le formulaire. Vous recevrez votre e-billet par email dans les 24h."
+    },
+    {
+      "question": "Puis-je venir avec des enfants ?",
+      "answer": "Oui, l'événement est familial ! Les enfants de moins de 12 ans entrent gratuitement. Un espace enfants avec animations sera disponible."
+    },
+    {
+      "question": "Y a-t-il un dress code ?",
+      "answer": "Aucun dress code obligatoire, mais nous encourageons les tenues traditionnelles africaines. Des prix seront remis aux plus belles tenues !"
+    }
+  ]
+}

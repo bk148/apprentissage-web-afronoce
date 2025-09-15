@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afronoce 2025 - Le Salon du Mariage Africain</title>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AFRONOCE</a>
+
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#programme">Programme</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#infos">Infos</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button class="btn btn-primary">
+                    <i class="fas fa-ticket"></i> Billet gratuit
+                </button>
+                <button class="btn btn-outline">
+                    Devenez exposant
+                </button>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-bg">
+            <img id="hero-image" src="" alt="African Wedding">
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-subtitle">Faites partie du salon</p>
+            <h1 class="hero-title">
+                <span id="event-name">Afronoce</span> <span id="event-year">'25</span>
+            </h1>
+            <p class="hero-description" id="event-description">
+                Rejoignez le plus grand salon du mariage africain avec son programme unique.
+                Le site est situé à Paris Pleyel facilement accessible en transport.
+            </p>
+            <p class="hero-info">
+                Les places sont limitées, alors obtenez votre billet maintenant et
+                <strong style="color: var(--afro-gold);">préparez-vous à vivre une expérience exceptionnelle.</strong>
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary">
+                    <i class="fas fa-ticket"></i> Obtenir un billet
+                </button>
+                <button class="btn btn-outline">
+                    Devenez exposant
+                </button>
+            </div>
+
+            <!-- Countdown -->
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">75</div>
+                    <div class="countdown-label">Jours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">04</div>
+                    <div class="countdown-label">Heures</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">36</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">35</div>
+                    <div class="countdown-label">Secondes</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Event Info Bar -->
+    <section class="event-bar">
+        <div class="event-bar-content" id="event-info-bar">
+            <!-- Contenu chargé dynamiquement -->
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="programme" class="program">
+        <div class="section-header">
+            <h2 class="section-title">Programme de l'événement</h2>
+            <p class="section-subtitle">Découvrez toutes les activités qui vous attendent lors de cette édition
+                exceptionnelle</p>
+        </div>
+
+        <div class="category-filters" id="category-filters">
+            <!-- Filtres chargés dynamiquement -->
+        </div>
+
+        <div class="program-grid" id="program-grid">
+            <!-- Cartes programme chargées dynamiquement -->
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+        <div class="section-header">
+            <h2 class="section-title">Nos Partenaires & Sponsors</h2>
+            <p class="section-subtitle">Ils nous font confiance et contribuent au succès de l'événement</p>
+        </div>
+
+        <div class="sponsors-grid" id="sponsors-grid">
+            <!-- Sponsors chargés dynamiquement -->
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="infos" class="info">
+        <div class="section-header">
+            <h2 class="section-title">Informations Pratiques</h2>
+            <p class="section-subtitle">Tout ce que vous devez savoir pour profiter pleinement de l'événement</p>
+        </div>
+
+        <div class="info-tabs">
+            <button class="tab-btn active" onclick="showTab('access')">
+                <i class="fas fa-map-marker-alt"></i> Accès
+            </button>
+            <button class="tab-btn" onclick="showTab('schedule')">
+                <i class="fas fa-clock"></i> Horaires
+            </button>
+            <button class="tab-btn" onclick="showTab('services')">
+                <i class="fas fa-coffee"></i> Services
+            </button>
+            <button class="tab-btn" onclick="showTab('faq')">
+                <i class="fas fa-question-circle"></i> FAQ
+            </button>
+        </div>
+
+        <div class="info-content">
+            <div id="access-tab" class="info-grid">
+                <!-- Contenu accès chargé dynamiquement -->
+            </div>
+
+            <div id="faq-tab" class="faq-list" style="display: none;">
+                <!-- FAQ chargée dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AFRONOCE</h3>
+                <p style="color: #999; margin-bottom: 1rem;">Le Salon du Mariage Africain</p>
+                <p style="color: #666;" id="footer-edition">Édition 2 - 25 Octobre 2025</p>
+                <div class="social-links" id="social-links">
+                    <!-- Liens sociaux chargés dynamiquement -->
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#programme">Programme</a></li>
+                    <li><a href="#billetterie">Billetterie</a></li>
+                    <li><a href="#exposants">Exposants</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul id="contact-info">
+                    <!-- Informations de contact chargées dynamiquement -->
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p style="color: #999; margin-bottom: 1rem;">Restez informé des dernières actualités</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="Votre email">
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Afronoce - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

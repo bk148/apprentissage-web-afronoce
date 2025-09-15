@@ -1,0 +1,52 @@
+{
+  "sponsors": [
+    {
+      "id": 1,
+      "name": "Sponsor Platinum 1",
+      "level": "platinum",
+      "logo": null,
+      "website": "#",
+      "description": "Partenaire principal"
+    },
+    {
+      "id": 2,
+      "name": "Sponsor Platinum 2",
+      "level": "platinum",
+      "logo": null,
+      "website": "#",
+      "description": "Partenaire principal"
+    },
+    {
+      "id": 3,
+      "name": "Sponsor Gold 1",
+      "level": "gold",
+      "logo": null,
+      "website": "#",
+      "description": "Partenaire or"
+    },
+    {
+      "id": 4,
+      "name": "Sponsor Gold 2",
+      "level": "gold",
+      "logo": null,
+      "website": "#",
+      "description": "Partenaire or"
+    },
+    {
+      "id": 5,
+      "name": "Sponsor Silver 1",
+      "level": "silver",
+      "logo": null,
+      "website": "#",
+      "description": "Partenaire argent"
+    },
+    {
+      "id": 6,
+      "name": "Sponsor Silver 2",
+      "level": "silver",
+      "logo": null,
+      "website": "#",
+      "description": "Partenaire argent"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "event": {
+    "name": "Afronoce",
+    "year": "2025",
+    "edition": 2,
+    "date": "2025-10-25",
+    "time": {
+      "start": "10:00",
+      "end": "22:00"
+    },
+    "location": {
+      "venue": "Paris Pleyel Resort",
+      "address": "1 Place des Droits de l'Homme",
+      "city": "Saint-Denis",
+      "zipCode": "93200",
+      "country": "France"
+    },
+    "description": "Rejoignez le plus grand salon du mariage africain avec son programme unique. Le site est situé à Paris Pleyel facilement accessible en transport.",
+    "highlights": [
+      "Plus de 100 exposants",
+      "Entrée gratuite",
+      "Programme unique",
+      "Facilement accessible"
+    ],
+    "contact": {
+      "email": "contact@afronoce.com",
+      "phone": "+33 1 23 45 67 89"
+    },
+    "social": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#",
+      "youtube": "#"
+    }
+  },
+  "access": {
+    "metro": [
+      {
+        "line": "Ligne 13",
+        "station": "Pleyel",
+        "walkTime": "2 min à pied"
+      },
+      {
+        "line": "RER D",
+        "station": "Pleyel",
+        "walkTime": "5 min à pied"
+      },
+      {
+        "line": "Ligne 14",
+        "station": "Saint-Ouen",
+        "walkTime": "10 min"
+      }
+    ],
+    "car": {
+      "exit": "Sortie 3 depuis le périphérique",
+      "parking": {
+        "spaces": 500,
+        "price": "15€ la journée",
+        "features": ["Bornes de recharge disponibles"]
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "backgroundImage": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920",
+    "alt": "African Wedding"
+  },
+  "program": {
+    "expositions": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400",
+    "conferences": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400",
+    "defile": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400",
+    "networking": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400",
+    "music": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400",
+    "animation": "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400"
+  },
+  "icons": {
+    "calendar": "fas fa-calendar",
+    "location": "fas fa-map-marker-alt",
+    "users": "fas fa-users",
+    "clock": "fas fa-clock",
+    "ticket": "fas fa-ticket",
+    "train": "fas fa-train",
+    "car": "fas fa-car",
+    "coffee": "fas fa-coffee",
+    "questionCircle": "fas fa-question-circle"
+  },
+  "social": {
+    "facebook": "fab fa-facebook-f",
+    "instagram": "fab fa-instagram",
+    "twitter": "fab fa-twitter",
+    "youtube": "fab fa-youtube"
+  }
+}
